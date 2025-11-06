@@ -1,0 +1,18 @@
+program cemcemcemankara.aleo;
+
+record token {
+    owner: address,
+    amount: u64
+}
+
+mapping account: address => u64;
+
+function mint_public(recipient: address, amount: u64) -> future.cemcemcemankara.aleo/mint_public {
+    async mint_public(recipient, amount)
+}
+
+transition mint_public(recipient: address, amount: u64) {
+    let current = get_or_use account[recipient] 0u64;
+    let updated = current + amount;
+    set account[recipient] = updated;
+}

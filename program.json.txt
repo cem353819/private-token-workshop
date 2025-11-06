@@ -1,0 +1,6 @@
+{
+  "program": "cemcemcemankara.aleo",
+  "version": "1.0.0",
+  "description": "Compliant Private Token for Aleo Workshop",
+  "license": "MIT"
+}
